@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/jquery.maskedinput.min.js"></script>
+    <script src="Scripts/Script.js" defer></script>
+</head>
+<body>
+    <div id="dark"></div>
+    <div id="Central_unit">
+        <div id="Osn_block">
+            <p id="hi">Hello</p>
+            <div id="Center_material">
+                <form action="">
+                    <p id="form">For business enquiries please use the form below</p>
+                    <p id="necessarily">*Required</p>
+                    <label class="inp">
+                        <input required class="Text_input" type="text">
+                        <p class="Main_text">Name*</p>
+                    </label>
+                    <label class="inp">
+                        <input required class="Text_input" type="text">
+                        <p class="Main_text">Company*</p>
+                    </label>
+                    <label class="inp">
+                        <input required class="Text_input" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <p class="Main_text">E-mail*</p>
+                    </label>
+                    <label class="inp">
+                        <input id="phone" class="Text_input">
+                        <p class="Main_text">Phone</p>
+                    </label>
+                    <label class="inp">
+                        <input class="Text_input" type="text">
+                        <p class="Main_text">Subject</p>
+                    </label>
+                    <label class="inp" id="message">
+                        <textarea class="Text_input" cols="30" rows="10"></textarea>
+                        <p class="Main_text">Message*</p>
+                    </label>
+                    <label class="container">I accept <a href="#">Terms and Privacy Policy</a>
+                        <input required='required' type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <input type="submit" id="Send" value="Send" onclick="pressing">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
